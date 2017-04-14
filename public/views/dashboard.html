@@ -1,0 +1,15 @@
+<!-- Dashboard.html -->
+
+<div class="row">
+    <div ng-repeat="keyword in dashboardCtrl.keywords" class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2>{{ keyword.key }}</h2>
+                <p>Total Messages <span class="pull-right"><label class="label label-danger">{{ keyword.count }}</label></span></p>
+            </div>
+            <div class="panel-body">
+                <a href="#/messages/{{ keyword.key }}">See all messages <span class="glyphicon glyphicon-arrow-right"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
